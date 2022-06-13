@@ -38,14 +38,14 @@ a {
 }
 
 .logo {
+   color: rgb(212,175,55);
    font-family: 'Oswald', sans-serif;
    font-size: 1.5rem;
    font-weight: 700;
-   color: rgb(212,175,55);
 }
 
 .header-nav {
-   display: flex;
+   display: none;
    justify-content: space-between;
    align-items: center;
 
@@ -61,6 +61,83 @@ a {
    padding: .25rem .75rem;
 }
 
+.mobile-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+}
+
+.mobile-nav-card {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+
+   background-color: rgb(212,175,55);
+   border-radius: 7.5px;   
+   width: 35vw;
+   height: 30vh;
+
+   position: fixed;
+   top: 1rem;
+   right: 1rem;
+
+   transform: translateX(45vw);
+   transition: .3s ease-in-out;
+}
+
+.mobile-nav-card.display {
+   transform: translateX(0);
+   transition: .4s ease-in-out;
+}
+
+.menu-bar {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   height: 24px;
+   padding: 3px;   
+   width: 24px;
+   border-radius: 3px;
+   background-color: transparent;
+}
+
+.menu-bar:hover {
+   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bar {
+   width: 13px;
+   height: 2px;
+   background-color: rgb(212,175,55);
+   border-radius: 1px;
+}
+
+.mobile-nav-card a  {
+   color: black;
+   font-weight: 500;
+}
+
+.mobile-nav-card a:hover {   
+   color: aliceblue;
+}
+
+.mobile-nav-card img {   
+   border-radius: 50%;
+   height: 20px;
+   padding: 2px;   
+   width: 20px;
+
+   position: absolute;
+   top: 0.5rem;
+   right: 0.5rem;
+}
+
+.mobile-nav-card img:hover {
+   background-color: rgba(255, 255, 255, 0.4);
+}
 /* END OF HEADER STYLING */
 
 /* START OF FOOTER STYLING */
@@ -107,6 +184,15 @@ a {
       background-size: unset;
    }
 
+   .header-nav {
+      display: flex;
+      height: 100%;
+   }
+
+   .mobile-nav {
+      display: none;
+   }
+
    .nav-links a {
       margin: 0 .35rem;
       font-size: 1.3rem;
@@ -124,6 +210,14 @@ a {
    body {
       background-image: url("../images/desktop-bg.jpg");
       background-size: unset;
+   }
+
+   .header-nav {
+      display: flex;
+   }
+
+   .mobile-nav {
+      display: none;
    }
 
    .nav-links a {
