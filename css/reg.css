@@ -1,7 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@400;500;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 * {
    box-sizing: border-box;
    padding: 0;
@@ -21,51 +21,24 @@ body {
    height: 100%;
 }
 
-/* START OF HEADER STYLING */
-
-.header {
-   position: fixed;
-   width: 100%;
-}
-
 a {   
    color: aliceblue;
    text-decoration: none;
 }
 
-.nav-links a {
-   font-family: 'Dancing Script', cursive;   
+/* START OF HEADER STYLING */
+.header {
+   position: fixed;
+   width: 100%;
 }
 
-.logo {
-   color: rgb(212,175,55);
-   font-family: 'Oswald', sans-serif;
-   font-size: 1.5rem;
-   font-weight: 700;
-}
-
-.header-nav {
-   display: none;
-   justify-content: space-between;
-   align-items: center;
-
-   background-color: transparent;
-   padding: 1rem;
-}
-
-.login-button {
-   background-color: transparent;
-   border: 2px solid white;   
-   border-radius: 10px;
-   font-size: .85rem;
-   padding: .25rem .75rem;
-}
+/* Mobile Menu Section */
 
 .mobile-nav {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 1rem;
+   padding: 0rem 1rem;
 }
 
 .mobile-nav-card {
@@ -75,13 +48,13 @@ a {
    align-items: center;
 
    background-color: rgb(212,175,55);
-   border-radius: 7.5px;   
-   width: 35vw;
+   border-radius: 7.5px;      
    height: 40vh;
+   width: 35vw;
 
    position: fixed;
-   top: 1rem;
    right: 1rem;
+   top: 1rem;
 
    transform: translateX(45vw);
    transition: .3s ease-in-out;
@@ -92,38 +65,6 @@ a {
    transition: .4s ease-in-out;
 }
 
-.menu-bar {
-   display: flex;
-   flex-direction: column;
-   justify-content: space-evenly;
-   align-items: center;
-   height: 24px;
-   padding: 3px;   
-   width: 24px;
-   border-radius: 3px;
-   background-color: transparent;
-}
-
-.menu-bar:hover {
-   background-color: rgba(255, 255, 255, 0.4);
-}
-
-.bar {
-   width: 13px;
-   height: 2px;
-   background-color: rgb(212,175,55);
-   border-radius: 1px;
-}
-
-.mobile-nav-card a  {
-   color: black;
-   font-weight: 500;
-}
-
-.mobile-nav-card a:hover {   
-   color: aliceblue;
-}
-
 .mobile-nav-card img {   
    border-radius: 50%;
    height: 20px;
@@ -131,21 +72,99 @@ a {
    width: 20px;
 
    position: absolute;
-   top: 0.5rem;
    right: 0.5rem;
+   top: 0.5rem;
 }
 
 .mobile-nav-card img:hover {
    background-color: rgba(255, 255, 255, 0.4);
 }
+
+.mobile-nav-card a  {
+   border-bottom: 1px solid white;
+   color: black;   
+   font-family: 'Dancing Script', cursive;   
+   font-weight: 700;
+   padding: .5rem;   
+   text-align: center;
+   width: 6.25rem;
+}
+
+.mobile-nav-card a:hover {   
+   background-color: rgba(250, 235, 215, 0.4);
+}
+
+.mobile-nav-card a:active {   
+   color: white;
+}
+
+.menu-bar {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+
+   border-radius: 3px;
+   background-color: transparent;
+   height: 24px;
+   padding: 3px;   
+   width: 24px;
+}
+
+.menu-bar:hover {
+   background-color: rgba(255, 255, 255, 0.4);
+}
+
+.bar {
+   background-color: rgb(212,175,55);
+   border-radius: 1px;
+   height: 2px;
+   width: 13px;   
+}
+
+/* Mobile Section End */
+
+/* General Header Section */
+
+.header-nav {
+   display: none;
+   justify-content: space-between;
+   align-items: center;
+
+   background-color: transparent;
+   padding: 1rem;
+}
+
+.logo {
+   color: rgb(212,175,55);   
+   font-family: 'Pacifico', cursive;
+   font-size: 2.5rem;
+   font-weight: 700;
+}
+
+.nav-links a {
+   font-family: 'Dancing Script', cursive;   
+}
+
+.nav-links a:hover {
+   border-bottom: 2px solid rgb(212,175,55);
+}
+
+.login-button {
+   background-color: transparent;
+   border: 2px solid white;   
+   border-radius: 10px;
+   font-size: .85rem;
+   padding: .25rem .75rem;
+}
 /* END OF HEADER STYLING */
 
-/* START OF FOOTER STYLING */
 
+/* START OF FOOTER STYLING */
 .footer {
-   /* color: rgba(250, 241, 241, 0.644); */
    color: rgb(212,175,55);
    display: block;      
+
    margin-bottom: .5rem;
    padding: 0 1rem;
    text-align: center;
@@ -163,21 +182,22 @@ a {
 
 .socials {
    display: flex;
+   justify-content: center;
    align-items: center;
    column-gap: .5rem;
-   margin: .35rem 0 0;
-   justify-content: center;
+   margin: .35rem 0 0;   
 }
 
-.socials img {
-   width: 16px;
+.socials img {   
    filter: brightness(0) invert(.75);
+   width: 16px;
 }
 
 /* END OF FOOTER STYLING */
 
 /* START OF RESPONSIVE STYLING */
 
+/* Tablet-size Styling */
 @media only screen and (min-width: 700px) and (max-width: 1034px) {
    body {
       background-image: url("../images/desktop-bg.jpg");
@@ -206,6 +226,7 @@ a {
    }
 }
 
+/* Desktop-size Styling */
 @media only screen and (min-width: 1035px) {
    body {
       background-image: url("../images/desktop-bg.jpg");
