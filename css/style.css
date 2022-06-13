@@ -38,14 +38,14 @@ a {
 }
 
 .logo {
+   color: rgb(212,175,55);
    font-family: 'Oswald', sans-serif;
    font-size: 1.5rem;
    font-weight: 700;
-   color: rgb(212,175,55);
 }
 
 .header-nav {
-   display: flex;
+   display: none;
    justify-content: space-between;
    align-items: center;
 
@@ -59,6 +59,57 @@ a {
    border-radius: 10px;
    font-size: .85rem;
    padding: .25rem .75rem;
+}
+
+.mobile-nav {
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   padding: 1rem;
+}
+
+.mobile-nav-card {
+   display: none;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   background-color: rgb(212,175,55);
+   border-radius: 7.5px;   
+   width: 35vw;
+   height: 40vh;
+   position: fixed;
+   top: 1rem;
+   right: 1rem;
+}
+
+.menu-bar {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-evenly;
+   align-items: center;
+   width: 16px;
+   height: 16px;
+   background-color: transparent;
+}
+
+.bar {
+   width: 13px;
+   height: 2px;
+   background-color: rgb(212,175,55);
+   border-radius: 1px;
+}
+
+
+
+.mobile-nav-card a  {
+   color: black;
+}
+
+.mobile-nav-card img {
+   position: absolute;
+   top: .5rem;
+   right: 1rem;
+   width: 12px;
 }
 
 /* END OF HEADER STYLING */
@@ -107,6 +158,15 @@ a {
       background-size: unset;
    }
 
+   .header-nav {
+      display: flex;
+      height: 100%;
+   }
+
+   .mobile-nav {
+      display: none;
+   }
+
    .nav-links a {
       margin: 0 .35rem;
       font-size: 1.3rem;
@@ -124,6 +184,14 @@ a {
    body {
       background-image: url("../images/desktop-bg.jpg");
       background-size: unset;
+   }
+
+   .header-nav {
+      display: flex;
+   }
+
+   .mobile-nav {
+      display: none;
    }
 
    .nav-links a {
