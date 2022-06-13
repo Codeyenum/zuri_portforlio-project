@@ -69,7 +69,7 @@ a {
 }
 
 .mobile-nav-card {
-   display: none;
+   display: flex;
    flex-direction: column;
    justify-content: space-evenly;
    align-items: center;
@@ -80,6 +80,12 @@ a {
    position: fixed;
    top: 1rem;
    right: 1rem;
+   transform: translateX(45vw);
+}
+
+.mobile-nav-card.display {
+   transform: translateX(0);
+   transition: .3s ease-in-out;
 }
 
 .menu-bar {
@@ -99,10 +105,9 @@ a {
    border-radius: 1px;
 }
 
-
-
 .mobile-nav-card a  {
    color: black;
+   font-weight: 500;
 }
 
 .mobile-nav-card img {
