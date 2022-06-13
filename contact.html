@@ -10,7 +10,7 @@
 </head>
 
 <body>
-   <header class="header">      
+   <header class="header">
       <nav class="mobile-nav">
          <a href="./index.html" class="logo">zoliè</a>
 
@@ -28,7 +28,7 @@
             <div class="bar"></div>
          </div>
       </nav>
-      <nav class="header-nav">         
+      <nav class="header-nav">
          <a href="./index.html" class="logo">zoliè</a>
 
          <div class="nav-links">
@@ -37,13 +37,34 @@
             <a href="./reg.html">Register</a>
          </div>
 
-         <a href="./login.html" class="login-button">Login</a>         
+         <a href="./login.html" class="login-button">Login</a>
       </nav>
    </header>
    <main class="main-area">
-
+      <h1>Contact Form</h1>
+      <form action="" class="contact">
+         <section class="name-section">
+            <div class="first name">
+               <label for="firstname">Firstname: </label>
+               <input type="text" name="firstname" id="firstname" placeholder="Your Firstname">
+            </div>
+            <div class="last name">
+               <label for="lastname">Lastname: </label>
+               <input type="text" name="lastname" id="lastname" placeholder="Your Lastname">
+            </div>
+         </section>
+         <div class="email">
+            <label for="email">Email: </label>
+            <input type="text" name="email" id="email" placeholder="Your Email Address">
+         </div>
+         <div class="message">
+            <label for="msg">Message: </label>
+            <textarea id="msg" name="msg" placeholder="Leave a Message"></textarea>
+         </div>
+         <button type="submit">Submit</button>
+      </form>
    </main>
-   <footer class="footer">      
+   <footer class="footer">
       <section class="socials">
          <a href="#" class="twitter">
             <img src="../icons/twitter-brands.svg" alt="twitter">
@@ -63,7 +84,7 @@
       </div>
    </footer><!-- End  Footer -->
 
-<script src="./js/contact.js"></script>
+   <script src="./js/contact.js"></script>
 </body>
 
 </html>

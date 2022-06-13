@@ -21,7 +21,7 @@ body {
    height: 100%;
 }
 
-a {   
+a {
    color: aliceblue;
    text-decoration: none;
 }
@@ -47,8 +47,8 @@ a {
    justify-content: space-evenly;
    align-items: center;
 
-   background-color: rgb(212,175,55);
-   border-radius: 7.5px;      
+   background-color: rgb(212, 175, 55);
+   border-radius: 7.5px;
    height: 40vh;
    width: 35vw;
 
@@ -65,10 +65,10 @@ a {
    transition: .4s ease-in-out;
 }
 
-.mobile-nav-card img {   
+.mobile-nav-card img {
    border-radius: 50%;
    height: 20px;
-   padding: 2px;   
+   padding: 2px;
    width: 20px;
 
    position: absolute;
@@ -80,21 +80,21 @@ a {
    background-color: rgba(255, 255, 255, 0.4);
 }
 
-.mobile-nav-card a  {
+.mobile-nav-card a {
    border-bottom: 1px solid white;
-   color: black;   
-   font-family: 'Dancing Script', cursive;   
+   color: black;
+   font-family: 'Dancing Script', cursive;
    font-weight: 700;
-   padding: .5rem;   
+   padding: .5rem;
    text-align: center;
    width: 6.25rem;
 }
 
-.mobile-nav-card a:hover {   
+.mobile-nav-card a:hover {
    background-color: rgba(250, 235, 215, 0.4);
 }
 
-.mobile-nav-card a:active {   
+.mobile-nav-card a:active {
    color: white;
 }
 
@@ -107,7 +107,7 @@ a {
    border-radius: 3px;
    background-color: transparent;
    height: 24px;
-   padding: 3px;   
+   padding: 3px;
    width: 24px;
 }
 
@@ -116,10 +116,10 @@ a {
 }
 
 .bar {
-   background-color: rgb(212,175,55);
+   background-color: rgb(212, 175, 55);
    border-radius: 1px;
    height: 2px;
-   width: 13px;   
+   width: 13px;
 }
 
 /* Mobile Section End */
@@ -136,42 +136,96 @@ a {
 }
 
 .logo {
-   color: rgb(212,175,55);   
+   color: rgb(212, 175, 55);
    font-family: 'Pacifico', cursive;
    font-size: 2.5rem;
    font-weight: 700;
 }
 
 .nav-links a {
-   font-family: 'Dancing Script', cursive;   
+   font-family: 'Dancing Script', cursive;
 }
 
 .nav-links a:hover {
-   color: rgb(212,175,55); 
+   color: rgb(212, 175, 55);
    font-size: 1.2rem;
 }
 
 .login-button {
    background-color: transparent;
-   border: 2px solid white;   
+   border: 2px solid white;
    border-radius: 10px;
    font-size: .85rem;
    padding: .25rem .75rem;
 }
 
 .login-button:hover {
-   border: 2px solid rgb(212,175,55); 
-   color: rgb(212,175,55);  
+   border: 2px solid rgb(212, 175, 55);
+   color: rgb(212, 175, 55);
 }
+
 /* END OF HEADER STYLING */
 
+/* START OF MAIN SECTION STYLING */
+
+h1 {
+   color: black;
+}
+
+form {
+   background-color: rgb(212, 175, 55);
+   border-radius: 10px;
+   font-size: 1rem;
+   font-weight: 700;
+   margin: 6rem auto;
+   padding: 2rem;
+   width: 75%;
+}
+
+input,
+textarea {
+   width: 100%;
+   height: 2.5rem;
+   margin: 0.5rem 0;
+   padding: 5px;
+   border: 1px solid white;
+   border-radius: 7.5px;
+   font-family: Roboto Mono;
+}
+
+textarea {
+   height: 5rem;
+}
+
+.name-section {
+   display: flex;
+   flex-direction: column;
+   justify-content: space-between;
+}
+
+.name {
+   width: 100%;
+}
+
+button {
+   background-color: rgb(114, 248, 197);
+   border: 0;
+   border-radius: 5px;
+   font-family: Roboto Mono;
+   font-weight: 500;
+   width: 5rem;
+   height: 1.5rem;
+}
+
+
+/* END OF MAIN SECTION STYLING */
 
 /* START OF FOOTER STYLING */
 .footer {
-   color: rgb(212,175,55);
-   display: block;      
+   color: rgb(212, 175, 55);
+   display: block;
 
-   
+
    font-size: 0.75rem;
    margin-bottom: .5rem;
    padding: 0 1rem;
@@ -193,10 +247,10 @@ a {
    justify-content: center;
    align-items: center;
    column-gap: .5rem;
-   margin: .35rem 0 0;   
+   margin: .35rem 0 0;
 }
 
-.socials img {   
+.socials img {
    filter: brightness(0) invert(.75);
    width: 16px;
 }
@@ -232,6 +286,19 @@ a {
       justify-content: space-between;
       align-items: center;
    }
+
+   form {
+      width: 50%;
+   }
+
+   .name-section {
+      flex-direction: row;
+   }
+
+   .name {
+      width: 45%;
+   }
+
 }
 
 /* Desktop-size Styling */
@@ -259,6 +326,18 @@ a {
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
+   }
+
+   form {
+      width: 50%;
+   }
+
+   .name-section {
+      flex-direction: row;
+   }
+
+   .name {
+      width: 45%;
    }
 }
 
