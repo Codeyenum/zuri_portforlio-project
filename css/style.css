@@ -127,7 +127,7 @@ h1, h2, h3, h3 {
    width: 13px;   
 }
 
-/* Mobile Section End */
+/* Mobile Menu Section End */
 
 /* General Header Section */
 
@@ -189,6 +189,12 @@ main {
 
 .text-content {
    padding: 2rem 2rem 2rem 0;
+}
+
+.hobbies, .skills {
+   text-align: center;
+   font-size: 1.2rem;
+   margin: 1.5rem;
 }
 
 .list-items {
