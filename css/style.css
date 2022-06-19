@@ -84,6 +84,7 @@ h1, h2, h3, h3 {
 }
 
 .mobile-nav-card img:hover {
+   cursor: pointer;
    background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -98,6 +99,7 @@ h1, h2, h3, h3 {
 }
 
 .mobile-nav-card a:hover {   
+   cursor: pointer;
    background-color: rgba(250, 235, 215, 0.4);
 }
 
@@ -119,6 +121,7 @@ h1, h2, h3, h3 {
 }
 
 .menu-bar:hover {
+   cursor: pointer;
    background-color: rgba(255, 255, 255, 0.4);
 }
 
@@ -154,6 +157,7 @@ h1, h2, h3, h3 {
 }
 
 .nav-links a:hover {
+   cursor: pointer;
    color: rgb(212,175,55); 
    font-size: 1.2rem;
 }
@@ -167,6 +171,7 @@ h1, h2, h3, h3 {
 }
 
 .login-button:hover {
+   cursor: pointer;
    border: 2px solid rgb(212,175,55); 
    color: rgb(212,175,55);  
 }
@@ -241,6 +246,7 @@ main {
 }
 
 .contact-btn:hover {
+   cursor: pointer;
    opacity: .7;
    transition: .4s ease-in-out;
 }
@@ -279,6 +285,7 @@ main {
 }
 
 .fa-brands:hover {
+   cursor: pointer;
    color: rgb(212,175,55);
 }
 
@@ -294,7 +301,8 @@ main {
    }
 
    .intro_section {
-      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
    }
 
    .text-content {
@@ -303,6 +311,10 @@ main {
       display: flex;
       flex-direction: column;
       justify-content: flex-end;
+   }
+
+   .text-content p {
+      font-size: .9rem;
    }
 
    .header-nav {
@@ -319,32 +331,24 @@ main {
       font-size: 1.3rem;
    }
 
-   .hobbies {
-      width: 35%;
-      padding: 1rem;
-      margin: 0 auto;
-   }
-
-   .skills {
-      width: 50%;
-      padding: 1rem;
-   }
-   .hobbies-and-skills {
-      display: flex;
-   }
-
-   .contact {
-      flex-direction: column;
-      justify-content: center;
-      align-items: center;
-      font-size: 1.25rem;
-   }
    
-   .contact-btn {
-      font-size: 1.25rem;
+   .hobbies-and-skills {
+      display: flex;  
+      flex-direction: column; 
+      padding: 2rem;   
+   }
+
+   .hobbies-and-skills h2 {
+      font-size: 1.5rem;
       font-weight: 700;
-      height: 1.75rem;
-      width: 10rem;
+   }
+
+   .hobbies, .skills {
+      font-size: 1.35rem;
+   }
+
+   .contact_section {
+      padding: 2rem; 
    }
 
    .footer {
@@ -376,7 +380,8 @@ main {
    }
 
    .intro_section {
-      display: flex;
+      flex-direction: row-reverse;
+      justify-content: space-around;
    }
 
    .text-content {
@@ -387,38 +392,36 @@ main {
       justify-content: flex-end;
    }
 
-   .hobbies {
-      width: 50%;
-      padding: 1rem;
-      margin: 0 auto;
-   }
-
-   .skills {
-      width: 50%;      
-      padding: 1rem;
-   }
-
-   .skills-list {
-      width: 100%;
-      margin: 0 auto;
-   }
-
    .hobbies-and-skills {
-      display: flex;      
-      justify-content: center; 
+      display: flex;  
+      flex-direction: column; 
+      padding: 2rem;   
+   }
+
+   .hobbies-and-skills h2 {
+      font-size: 1.75rem;
+      font-weight: 700;
+   }
+
+   .hobbies, .skills {
+      font-size: 1.5rem;
+      width: 100%;      
+   }
+
+   .contact_section {
+      padding: 2rem; 
    }
 
    .contact {
       flex-direction: column;
       justify-content: center;
       align-items: center;
-      font-size: 1.25rem;
+      font-size: 1.25rem;       
    }
    
    .contact-btn {
       font-size: 1.25rem;
       font-weight: 700;
-      height: 1.75rem;
       width: 10rem;
    }
 
