@@ -28,7 +28,6 @@ a {
 
 /* START OF HEADER STYLING */
 .header {
-   position: fixed;
    width: 100%;
 }
 
@@ -38,7 +37,7 @@ a {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0rem 1rem;
+   padding: 0 18px;
 }
 
 .mobile-nav-card {
@@ -48,6 +47,7 @@ a {
    align-items: center;
 
    background-color: rgb(212,175,55);
+   border: 1px solid white;
    border-radius: 7.5px;      
    height: 40vh;
    width: 35vw;
@@ -122,7 +122,7 @@ a {
    width: 13px;   
 }
 
-/* Mobile Section End */
+/* Mobile Menu Section End */
 
 /* General Header Section */
 
@@ -155,7 +155,7 @@ a {
    background-color: transparent;
    border: 2px solid white;   
    border-radius: 10px;
-   font-size: .85rem;
+   font-size: 1rem;
    padding: .25rem .75rem;
 }
 
@@ -164,6 +164,7 @@ a {
    color: rgb(212,175,55);  
 }
 /* END OF HEADER STYLING */
+
 
 /* START OF MAIN SECTION STYLING */
 
@@ -213,9 +214,6 @@ button {
    text-align: center;
    width: 100%;
 
-   position: absolute;
-   bottom: 0;
-   left: 0;
 }
 
 .copyright {
@@ -227,13 +225,17 @@ button {
    display: flex;
    justify-content: center;
    align-items: center;
-   column-gap: .5rem;
-   margin: .35rem 0 0;   
+   column-gap: .75rem;
+   font-size: 1rem;  
+   margin-bottom: .5rem; 
 }
 
-.socials img {   
-   filter: brightness(0) invert(.75);
-   width: 16px;
+.fa-brands {
+   color: bisque;
+}
+
+.fa-brands:hover {
+   color: rgb(212,175,55);
 }
 
 /* END OF FOOTER STYLING */

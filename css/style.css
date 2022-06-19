@@ -35,7 +35,6 @@ h1, h2, h3, h3 {
 
 /* START OF HEADER STYLING */
 .header {
-   /* position: fixed; */
    width: 100%;
 }
 
@@ -213,6 +212,7 @@ main {
 
 .contact {
    background-color: rgb(212,175,55);
+   border: 1px solid bisque;
    border-radius: 5px;
    margin: 18px;
    text-align: center;
