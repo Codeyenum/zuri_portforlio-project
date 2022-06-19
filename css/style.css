@@ -2,7 +2,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Caveat:wght@400;500;700&display=swap');
 
-
 * {
    box-sizing: border-box;
    padding: 0;
@@ -27,8 +26,11 @@ a {
    text-decoration: none;
 }
 
-h1, h2, h3, h3 {
-   color: rgb(212,175,55);
+h1, h2, h3, h3 { 
+   font-size: 1.65rem;  
+   margin-bottom: 1rem;
+   padding-bottom: 5px;
+   border-bottom: 2px solid rgb(212,175,55);
 }
 
 /* START OF HEADER STYLING */
@@ -43,7 +45,7 @@ h1, h2, h3, h3 {
    display: flex;
    justify-content: space-between;
    align-items: center;
-   padding: 0rem 1rem;
+   padding: 0 18px;
 }
 
 .mobile-nav-card {
@@ -53,6 +55,7 @@ h1, h2, h3, h3 {
    align-items: center;
 
    background-color: rgb(212,175,55);
+   border: 1px solid white;
    border-radius: 7.5px;      
    height: 40vh;
    width: 35vw;
@@ -176,50 +179,70 @@ main {
    padding: 0 1rem;
 }
 
-/* .intro_section {
+.intro_section {
    display: flex;
    flex-direction: column;
-} */
-
-.intro_section img {
-   width: 16rem;
-   margin: auto;
-   border-radius: 1rem;
+   align-items: center;
+   padding: 18px;
 }
 
-.text-content {
-   padding: 2rem 2rem 2rem 0;
+.intro_section img {   
+   border-radius: 1rem;
+   margin: 3rem;
+   max-width: 16rem;
+}
+
+.text-content p {
+   font-size: 1.2rem;
+   line-height: 1.75rem;
 }
 
 .hobbies, .skills {
-   text-align: center;
+   padding: 18px;
    font-size: 1.2rem;
-   margin: 1.5rem;
 }
 
-.list-items {
-   list-style: none;
+.hobbies-list, .skills-list {
+   list-style-position: inside;
+   list-style-type: square;
+}
+
+::marker {
+   color: rgb(212,175,55);
 }
 
 .contact {
-   display: flex;
-   column-gap: 1rem;
-   justify-content: center;
-   width: 100%;
-   margin: 1rem auto;
+   background-color: rgb(212,175,55);
+   border-radius: 5px;
+   margin: 18px;
    text-align: center;
+
+   display: flex;
+   flex-direction: column;
+   align-items: center;
 }
 
-.contact-btn {
-   background-color: rgb(212,175,55);
-   border: 0;
-   border-radius: 5px;
+.contact p {
+   margin: 5px;
    color: black;
-   font-family: 'Caveat', cursive;
    font-size: 1.2rem;
    font-weight: 700;
-   height: 1.5rem;
-   width: 7.5rem;
+}
+
+.contact-btn { 
+   background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+   border: 1px solid #13080d;   
+   border-radius: 5px;    
+   box-shadow: 0 8px 8px -4px #13080d;
+   font-size: 1.2rem;
+   font-weight: 700;
+   margin-bottom: 5px;
+   padding: 5px 16px;
+}
+
+.contact-btn:hover {
+   opacity: .7;
+   transition: .4s ease-in-out;
 }
 
 /* END OF MAIN SECTION STYLING */
@@ -248,13 +271,17 @@ main {
    display: flex;
    justify-content: center;
    align-items: center;
-   column-gap: .5rem;
-   margin: .35rem 0 0;   
+   column-gap: .75rem;
+   font-size: 1rem;  
+   margin-bottom: .5rem; 
 }
 
-.socials img {   
-   filter: brightness(0) invert(.75);
-   width: 16px;
+.fa-brands {
+   color: bisque;
+}
+
+.fa-brands:hover {
+   color: rgb(212,175,55);
 }
 
 /* END OF FOOTER STYLING */
