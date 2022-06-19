@@ -253,13 +253,11 @@ main {
    color: rgb(212,175,55);
    display: block;      
 
-   
    font-size: 0.75rem;
    margin-bottom: .5rem;
    padding: 0 1rem;
    text-align: center;
    width: 100%;
-
 }
 
 .copyright {
@@ -292,14 +290,8 @@ main {
 /* Tablet-size Styling */
 @media only screen and (min-width: 700px) and (max-width: 1034px) {
    body {
-      background-image: url("../images/desktop-bg.jpg");
-      background-size: unset;
+      background-image: url("../images/desktop-bg.jpg");    
    }
-
-   /* main {
-      display: flex;
-      flex-direction: row;
-   } */
 
    .intro_section {
       display: flex;
@@ -339,8 +331,6 @@ main {
    }
    .hobbies-and-skills {
       display: flex;
-      /* flex-direction: row;
-      justify-content: center; */
    }
 
    .contact {
@@ -369,7 +359,6 @@ main {
 @media only screen and (min-width: 1035px) {
    body {
       background-image: url("../images/desktop-bg.jpg");
-      background-size: unset;
    }
 
    .header-nav {
@@ -398,10 +387,9 @@ main {
    }
 
    .hobbies {
-      width: 35%;
+      width: 50%;
       padding: 1rem;
       margin: 0 auto;
-      text-align: center;
    }
 
    .skills {
@@ -415,9 +403,8 @@ main {
    }
 
    .hobbies-and-skills {
-      display: flex;
-      /* flex-direction: row;
-      justify-content: center; */
+      display: flex;      
+      justify-content: center; 
    }
 
    .contact {
@@ -438,7 +425,7 @@ main {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
-      align-items: center;
+      align-items: center;      
    }
 }
 
