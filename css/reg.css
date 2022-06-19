@@ -17,7 +17,7 @@ body {
    background-image: url("../images/mobile-two-bg.jpg");
    background-repeat: no-repeat;
    background-size: cover;
-   font-family: 'Caveat', cursive;
+   font-family: 'Pacifico', cursive;
    height: 100%;
 }
 
@@ -168,15 +168,27 @@ a {
 
 /* START OF MAIN SECTION STYLING */
 
+.reg h1 {
+   font-size: 1.65rem;
+   padding-bottom: .5rem;   
+}
+
+.reg p {   
+   border-top: 2px solid bisque;
+   border-bottom: 2px solid bisque;
+   font-size: .9rem;   
+   margin-bottom: 1.5rem;
+   padding: .5rem 0;   
+}
 
 form {
    background-color: rgb(212, 175, 55);
+   border: 2px solid bisque;
    border-radius: 10px;
-   font-size: 1rem;
-   font-weight: 700;
-   margin: 6rem auto;
+   font-size: 0.9rem;
+   margin: 4rem auto;
    padding: 2rem;
-   width: 65%;
+   width: 80%;
 }
 
 select {
@@ -184,30 +196,47 @@ select {
    height: 2.5rem;
    margin: 0.5rem 0;
    padding: 5px;
-   border: 1px solid white;
+   border: 1px solid black;
    border-radius: 7.5px;
-   font-family: Roboto Mono;
+   color: gray;
+   font-family: 'Caveat', cursive;
+   font-size: 1rem;
+   font-weight: 500;
 }
 
 input {
    width: 100%;
    height: 2.5rem;
    margin: 0.5rem 0;
-   padding: 5px;
-   border: 1px solid white;
+   padding: 10px;
+   border: 1px solid black;
    border-radius: 7.5px;
-   font-family: Roboto Mono;
+}
+
+::placeholder {
+   font-family: 'Caveat', cursive;
+   font-size: 1rem;
+   font-weight: 500;
 }
 
 button {
-   background-color: rgb(114, 248, 197);
-   border: 0;
-   border-radius: 5px;
-   font-family: Roboto Mono;
-   font-weight: 500;
+   background-image: linear-gradient(to bottom right, #FF512F, #DD2476);
+   border: 1px solid #13080d;   
+   border-radius: 5px;    
+   box-shadow: 0 8px 8px -4px #13080d;
+   font-family: 'Pacifico', cursive;
+   font-size: .8rem;
+   font-weight: 700;
+   margin-top: .35rem;
    width: 5rem;
-   height: 1.5rem;
+   height: 1.75rem;
 }
+
+button:hover {
+   opacity: .7;
+   transition: .4s ease-in-out;
+}
+
 /* END OF MAIN SECTION STYLING */
 
 /* START OF FOOTER STYLING */
@@ -215,7 +244,7 @@ button {
    color: rgb(212,175,55);
    display: block;      
 
-   
+   font-family: 'Caveat', cursive;
    font-size: 0.75rem;
    margin-bottom: .5rem;
    padding: 0 1rem;
