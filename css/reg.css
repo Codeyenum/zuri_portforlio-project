@@ -283,7 +283,6 @@ button:hover {
 @media only screen and (min-width: 700px) and (max-width: 1034px) {
    body {
       background-image: url("../images/desktop-bg.jpg");
-      background-size: unset;
    }
 
    .header-nav {
@@ -312,7 +311,6 @@ button:hover {
 @media only screen and (min-width: 1035px) {
    body {
       background-image: url("../images/desktop-bg.jpg");
-      background-size: unset;
    }
 
    .header-nav {

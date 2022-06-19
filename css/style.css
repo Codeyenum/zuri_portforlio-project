@@ -270,7 +270,7 @@ main {
    justify-content: center;
    align-items: center;
    column-gap: .75rem;
-   font-size: 1rem;  
+   font-size: 1.2rem;  
    margin-bottom: .5rem; 
 }
 
@@ -352,6 +352,7 @@ main {
       flex-direction: row-reverse;
       justify-content: space-between;
       align-items: center;
+      font-size: 0.9rem;
    }
 }
 
@@ -425,7 +426,8 @@ main {
       display: flex;
       flex-direction: row-reverse;
       justify-content: space-between;
-      align-items: center;      
+      align-items: center;   
+      font-size: 0.9rem;   
    }
 }
 
